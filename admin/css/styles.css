@@ -1,0 +1,172 @@
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(https://meyerweb.com/eric/tools/css/reset/reset.css);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+*:before, *:after {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+body {
+  background: url('../images/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #606468;
+  font: 87.5%/1.5em 'Open Sans', sans-serif;
+  margin: 0;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+input {
+  border: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  padding: 0;
+  -webkit-appearance: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background: rgba(88, 88, 88, 0.103); /* Optional: semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
+footer {
+    background-color: rgba(60, 60, 60, 0.578); /* Optional: semi-transparent background for footer */
+    color: #eee;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+footer a {
+    color: #09c;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+#login {
+  width: 280px;
+}
+#login form span {
+  background-color: #4d4d4d3f;
+  border-radius: 3px 0px 0px 3px;
+  color: #ffffff;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+}
+#login form input {
+  height: 50px;
+}
+#login form input[type="text"], input[type="password"] {
+  background-color: #2828283f;
+  border-radius: 0px 3px 3px 0px;
+  color: #ffffff;
+  margin-bottom: 1em;
+  padding: 0 16px;
+  width: 230px;
+}
+#login form input[type="submit"] {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #232e7b;
+  color: #eee;
+  font-weight: bold;
+  margin-bottom: 2em;
+  text-transform: uppercase;
+  width: 280px;
+}
+#login form input[type="submit"]:hover {
+  background-color: #eee;
+  color: #232e7b;
+}
+#login > p {
+  text-align: center;
+}
+#login > p span {
+  padding-left: 5px;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.back {
+  border-radius: 3px;
+  background-color: #4d4d4d3f;
+  border: 2px solid #c7c7c7;
+  border-radius: 10px;
+  color: #eee;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  text-transform: uppercase; 
+  display: inline-block; 
+}
+
+
+.back span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.back span:after {
+  content: '\00ab';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.back:hover span {
+  padding-left: 25px;
+}
+
+.back:hover span:after {
+  opacity: 1;
+  left: 0;
+}
